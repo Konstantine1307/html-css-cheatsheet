@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own CheatSheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <!-- Header with background image and dropdown buttons -->
+    <header>
+        <h1>My Own Cheatsheet</h1>
+    
+
+    <!-- Nav with dropdown : HTML and CSS -->
+    <div class="container">
+        <nav>
+            <div class="navbutton">
+                <a href="index.html">HTML Reference</a>
+                <div class="dropdown">
+                    <div class="navbutton"><a href="#html-table">HTML Tables</a></div>
+                    <div class="navbutton"><a href="#html-elements">HTML Elements</a></div>
+                    <!-- <div class="navbutton"><a href="#"></a></div> -->
+                </div>
+            </div>
+            <div class="navbutton">
+                <a href="index.html">CSS Reference</a>   
+                <!-- <div class="dropdown">
+                    <div class="navbutton"><a href="#"></a></div>
+                    <div class="navbutton"><a href="#"></a></div>
+                    <div class="navbutton"><a href="#"></a></div>
+                </div> -->  
+            </div>
+        </nav>
+    </div>
+   </header>  
+
+    <!-- Sections - HTML and CSS References -->
+    
+    <main class="references">
+
+        <!-- HTML Tables section -->
+
+        <article class="html-reference">
+            <h2 id="html-table">HTML Tables</h2>
+            <h3>Table Tags</h3>
+        
+            <table class="html-ref">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Structure</th>       
+                    </tr>      
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;table&gt;</td>
+                        <td>Table Element</td>
+                        <td class="break-td">The wrapper element for all HTML tables and has content that is used to represent a
+                            two-dimensional table made of rows and columns.</td>
+                        <td class="break-td"></td>       
+                    </tr>
+                    <tr>
+                        <td>&lt;thead&gt;</td>
+                        <td>Table Head Element</td>
+                        <td class="break-td">The set of rows defining the column headers in a table.</td>
+                        <td class="break-td"></td>       
+                    </tr>
+                    <tr>
+                        <td>&lt;tbody&gt;</td>
+                        <td>Table Body Element</td>
+                        <td class="break-td"> It is a semantic element that will contain all table data other than table heading
+                            and table footer content. </td>
+                        <td class="break-td"></td>       
+                    </tr>
+                    <tr>
+                        <td>&lt;tr&gt;</td>
+                        <td>Table Row Element</td>
+                        <td class="break-td">The table row contaner.</td>
+                        <td class="break-td"></td>       
+                    </tr>
+                    <tr>
+                        <td>&lt;td&gt;</td>
+                        <td>Table Data Element</td>
+                        <td class="break-td">The table cell container.</td>
+                        <td class="break-td"></td>        
+                    </tr>
+                    <tr>
+                        <td>&lt;th&gt;</td>
+                        <td>Table Heading Element</td>
+                        <td class="break-td">is used to add titles to rows and columns of a table and must be enclosed in a
+                            table row element, &lt;tr&gt;.</td>
+                        <td class="break-td"></td>       
+                    </tr>
+                    <tr>
+                        <td>&lt;tfoot&gt;</td>
+                        <td>Table Footer Element</td>
+                        <td class="break-td">The set of rows defining the footer in a table.</td>
+                        <td class="break-td"></td>      
+                    </tr>       
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            HTML tables allow web developers to arrange data into rows and columns.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+
+        <!-- HTML Elements Section -->
+
+        <article class="html-reference">
+            <h2 id="html-elements">HTML Elements</h2>
+            <h3>Element Tags</h3>
+            <p id="ele-description">An HTML element is a piece of content in an HTML document and uses the following syntax:
+                opening tag &#40;<span class="tag-color">&lt;</span>&#41; + content + closing tag &#40;<span
+                    class="tag-color">&#47;&gt;</span>&#41;.</p>
+            <table class="html-ref">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Structure</th>
+                    </tr>      
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>&lt;html&gt;</td>
+                        <td>HTML Element</td>
+                        <td class="break-td">The root of an HTML document, should be added after the !DOCTYPE declaration. All content/structure
+                            for an HTML document should be contained between the opening and closing &lt;html&gt; tags.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;head&gt;</td>
+                        <td>Head Element</td>
+                        <td class="break-td">Contains general information about an HTML page that isn’t displayed on the page itself. This
+                            information is called metadata and includes things like the title of the HTML document and links to
+                            stylesheets.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;title&gt;</td>
+                        <td>Title Element</td>
+                        <td class="break-td">contains a text that defines the title of an HTML document. The title is displayed in the browser’s
+                            title bar or tab in which the HTML page is displayed. The &lt;title&gt; element can only be
+                            contained inside a document's &lt;head&gt; element.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;body&gt;</td>
+                        <td>Body Element</td>
+                        <td class="break-td">Represents the content of an HTML document.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;-&lt;h6&gt;</td>
+                        <td>Heading Elements</td>
+                        <td class="break-td">The heading elements are ordered from the highest level &lt;h1&gt; to the lowest level &lt;h6&gt;.
+                        </td>
+                        <td class="break-td"></td>
+                    </tr>      
+                    <tr>
+                        <td>&lt;div&gt;</td>
+                        <td>Div Element</td>
+                        <td class="break-td">Is used as a container that divides an HTML doucments into sections.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>Paragraph Element</td>
+                        <td class="break-td">Contains and display a block of text.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;span&gt;</td>
+                        <td>Span Element</td>
+                        <td class="break-td">Is an inline container for text and can be used to group text for styling purposes.</td>
+                        <td class="break-td ele-structure">
+                            <span class="tag-color">&lt;p&gt;&lt;span&gt;</span>This text<span
+                                class="tag-color">&lt;&#47;span&gt;</span> may be styled differently than the surrounding
+                            text.<span class="tag-color">&lt;&#47;p&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;em&gt;</td>
+                        <td>Emphasis Element</td>
+                        <td class="break-td">Emphasizes text and browsers will usually <em>italicize</em> the emphasized text by default.</td>
+                        <td class="break-td ele-structure">
+                            <span class="tag-color">&lt;p&gt;</span>This<span class="tag-color">&lt;em&gt;</span>word<span
+                                class="tag-color">&lt;&#47;em&gt;</span> will be emphasized in italics.<span
+                                class="tag-color">&lt;&#47;p&gt;</span>
+                        </td>
+                    </tr>      
+                    <tr>
+                        <td>&lt;strong&gt;</td>
+                        <td>Strong Element</td>
+                        <td class="break-td">Highlights important, serious, or urgent text and browsers will normally render this highlighted
+                            text in <strong>bold</strong> by default.</td>
+                        <td class="break-td ele-structure">
+                            <span class="tag-color">&lt;p&gt;</span>This is<span
+                                class="tag-color">&lt;strong&gt;</span>important<span
+                                class="tag-color">&lt;&#47;strong&gt;</span> text!.<span class="tag-color">&lt;&#47;p&gt;</span>
+                        </td>
+        
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>Line break Element</td>
+                        <td class="break-td">Will create a line break in text. It requires only an opening tag.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ul&gt;</td>
+                        <td>Unordered List Element</td>
+                        <td class="break-td">Is used to create a list of items in no particular order. Each individual list item will have a
+                            bullet point by default.
+                        </td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;ol&gt;</td>
+                        <td>Ordered List Element</td>
+                        <td> class="break-td"Creates a list of items in sequential order. Each list item appears numbered by default.
+                        </td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;li&gt;</td>
+                        <td>List Item</td>
+                        <td class="break-td">Creates list items inside Ordered lists &lt;ol&gt; and Unordered lists &lt;ul&gt;.</td>
+                        <td class="break-td"></td>
+                    </tr>
+                    <tr>
+                        <td>&lt;img&gt;</td>
+                        <td>Image Element</td>
+                        <td class="break-td">Embed images in documents. The src attribute contains the image URL and is mandatory. &lt;img&gt; is
+                            an empty element meaning it should not have a closing tag.</td>
+                        <td class="break-td ele-structure">
+                            <span class="tag-color">&lt;img</span>
+                            <span class="att-color">src</span>=<span class="ref-color">"path/to/image"</span>
+                            <span class="tag-color">&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;video&gt;</td>
+                        <td>Video Element</td>
+                        <td class="break-td">Embeds a media player for video playback. The src attribut will containe the URL to the video.</td>
+                        <td class="break-td ele-structure">
+                            <span class="tag-color">&lt;video</span>
+                            <span class="att-color">src</span>=<span class="ref-color">"test-video.mp4"</span>
+                            <span class="att-color">controls</span><span class="tag-color">&gt;</span>
+                            <br>Video not supported
+                            <span class="tag-color">&lt;&#47;video&gt;</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;anchor&gt;</td>
+                        <td>Anchor Element</td>
+                        <td class="break-td">Is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages, files
+                            on the same server, a location on the same page, or any other URL via the hyperlink reference
+                            attribute, href. The href determines the location the anchor element points to.</td>
+                        <td class="break-td ele-structure">
+                            <span class="tag-color">&lt;a</span>
+                            <span class="att-color">href</span>=<span class="ref-color">"http:////www.codecademy.com"</span>
+                            <span class="tag-color">&gt;</span>
+                            Visit this site
+                            <span class="tag-color">&lt;&#47;a&gt;</span>
+                        </td>
+                    </tr>
+               
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            The content of an HTML element is the information between the opening and closing tags of an element.
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <div class="container-footer">
+            <div class="column">
+                <h4>SOURCE:</h4>             
+            </div>  
+            <div class="column">
+                <a href="https://codecademy.com"><h4>Codecademy Cheatsheets</h4></a>               
+            </div>
+        </div> 
+    </footer>
+   </body>
+</html>

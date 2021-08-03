@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Open+Sans&display=swap');
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+body {
+    margin: 0 auto;
+    background-color: rgb(229, 234, 243); 
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-image: url(images/pattern.jpeg);
+    position: sticky;
+    top: 0;  
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+h1, h2, h3 {  
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+h1 {
+    color: rgb(240, 248, 255);
+    font-size: 4rem;
+    text-shadow: 2px 3px 2px rgb(128, 128, 128);
+    padding: 30px;
+    margin-top: 0;  
+}
+
+h2 {
+    font-size: 2rem;
+    text-decoration: underline dotted rgba(35, 77, 161, 0.507);
+    padding-top: 10px;
+}
+
+h3  {
+    border: dotted rgb(158, 124, 102);
+    font-weight: bold;
+    margin: 20px 35%;
+    width: 30%;
+    padding: 5px 0;
+    letter-spacing: 8px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+/* Table, Table headers, rows and data styling */
+
+.html-reference {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(18, 41, 87, 0.253);
+    margin-bottom: 40px;   
+}
+
+th {
+    background-color: rgb(22, 50, 104);
+    padding: 5px;
+    border: solid 2px rgb(240, 248, 255);
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(240, 248, 255);  
+}
+
+tr, td {
+    border: solid 1px rgb(147, 199, 216);
+    padding: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(240, 248, 255);
+    color: rgb(12, 22, 39);
+}
+
+/* css to avoid overflow of the last two columns content in the main table */
+
+.break-td {
+    word-break: break-all;
+}
+
+tfoot td{
+    background-color: rgb(22, 50, 104);
+    color: rgb(245, 245, 245);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Structure column with code editor styling */
+
+.ele-structure {
+    background-color: rgb(33, 30, 47);
+    color: rgb(245, 245, 245);
+    font-size: smaller;
+}
+.tag-color {
+    color: rgb(207, 86, 117);
+}
+
+.att-color {
+    color: rgb(180, 211, 82);
+}
+
+.ref-color {
+   color: rgb(255, 223, 131);
+}
+
+.break-one-space {
+    padding-left: 10px;
+}
+
+.break-two-spaces {
+    padding-left: 20px;
+}
+/* Dropdown Nav Buttons - HTML Reference and CSS Reference */
+
+.dropdown {
+    display: none;
+    position:absolute;
+    z-index: 1;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.navbutton {
+    font-size: 25px;  
+    border-radius: 25px;
+    padding: 11px 25px;
+    display: inline-block;
+    position: relative;
+    background-color:rgb(22, 50, 104);
+}
+
+.navbutton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navbutton {
+    width: 140px;
+    font-size: 16px;
+    background-color: rgb(227, 232, 236);
+    margin-left: -30px;
+    border: 1px solid rgb(12, 22, 39);
+    border-radius: 2px;
+}
+
+.dropdown .navbutton a {
+    color: rgb(12, 22, 39);
+    font-weight: bold;
+}
+
+.dropdown .navbutton:hover {  
+    background-color: rgb(244, 246, 248);
+    transition-duration: .5s; 
+}
+
+/* Footer */
+
+footer {
+   
+    background-color: rgb(173, 135, 135);
+    padding: 20px 50px;
+}
+  
+footer h4 {
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+}
+
+footer a {
+    text-decoration-line: underline;
+    
+}
+
+.container-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align:justify;
+  }
+  
+.column {
+    min-width: 300px;
+    display: inline-block;
+    vertical-align: top;
+    
+  }
+
+  
+/* Media query set up to prefent table's last column overflowing when resizing screen */
+
+@media screen and (max-width: 900px) {
+
+   h1 {
+       font-size: 3rem;
+   }
+
+   h2 {
+       font-size: 1.5rem;
+   }
+
+   h3 {
+       font-size: 1rem;
+   }
+    .html-reference {
+        width: 100%;
+    }
+    
+    .navbutton {
+        font-size: 16px;
+        padding: 5px 12px;
+    }
+
+    .dropdown .navbutton {
+        width: 120px;
+        margin-left: -12px;
+        font-size: .8rem;
+    }
+}
